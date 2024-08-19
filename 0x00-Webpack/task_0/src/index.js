@@ -1,4 +1,4 @@
-var $ = require( "jquery" );
+const $ = require('jquery');
 
 $('body').append('<p>Holberton Dashboard</p>');
 $('body').append('<p>Dashboard data for the students</p>');
