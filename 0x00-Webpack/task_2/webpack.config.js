@@ -14,19 +14,19 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader'],
-			},
-			{
-				test: /\.(gif|svg|png|jpg|jpeg)$/i,
-				type: 'asset/resource',
-				use: [
-					{
-						loader: ['file-loader', 'image-webpack-loader'],
-						options: {
-							bypassOnDebug: true,
-							disable: true,
+		  {
+			test: /\.css$/i,
+			use: ["style-loader", "css-loader"],
+		  },
+		  {
+			test: /\.(gif|png|jp?g|svg)$/i,
+			use: [
+			  "file-loader",
+			  {
+				loader: "image-webpack-loader",
+				options: {
+				  bypassOnDebug: true,
+				  disable: true,
 						},
 					},
 				],
