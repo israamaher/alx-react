@@ -1,12 +1,7 @@
-.login {
-    padding: 16px 24px;
+.App-body {
+    padding: 36px 24px;
 }
-
-.login input,
-.login button {
-    margin: 4px;
-}
-
-.login button {
-    cursor: pointer;
+  
+.App-body input {
+    margin: 0 16px 0 8px;
 }

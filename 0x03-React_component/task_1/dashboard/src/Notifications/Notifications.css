@@ -1,12 +1,18 @@
 .Notifications {
-	padding: 2em;
-	border: 2px dashed red;
+	border: 3px dotted var(--holberton-red);
+	padding: 6px 12px;
+	position: relative;
+	margin-top: 12px;
 }
 
-ul li[data='default'] {
+.Notifications li {
+    font-size: 17px;
+}
+
+li[data-notification-type="default"] {
 	color: blue;
 }
 
-ul li[data='urgent'] {
-	color: red;
+li[data-notification-type="urgent"] {
+	color: var(--holberton-red);
 }
